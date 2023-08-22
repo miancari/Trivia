@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRIVIA MIANCARI</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="/coollogo_com-69764650.png" alt="">    
+    </header>
+    <main id="main-contenedor">
+        <div class="rows">
+            <div class="rows is-narrow">
+                <div class="select is-link" >
+                    <select id="categoria">
+                        <option>Seleccione la categoría: </option>
+                        <option value="9">Conocimiento General</option>
+                        <option value="21">Deportes</option>
+                        <option value="24">Politica</option>
+                        <option value="27">Animales</option>
+                        <option value="20">Mitología</option>
+                    </select>
+                </div>
+                <div class="select is-success" >
+                    <select id="dificultad">
+                        <option>Seleccione Dificultad: </option>
+                        <option value="easy">Facil</option>
+                        <option value="medium">Medio</option>
+                        <option value="hard">Dificl</option>
+                    </select>
+                </div>
+                <div class="select is-danger">
+                    <select id="tipo">
+                        <option>Tipo de pregunta</option>
+                        <option value="multiple">Tipo Multiple</option>
+                        <option value="boolean">Verdadero-Falso</option>
+                    </select>
+                </div>
+                <div id="contenedor-quiz" class="box quiz"></div> 
+                <button id="siguiente-pregunta" class="button is-success">Siguiente pregunta</button>
+                <button id="nueva-trivia" class="button is-warning">nueva trivia</button>
+                <div class="box quiz" id="puntaje">puntaje: 0</div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="content has-text-centered">
+            <p>
+              <strong>Trivia Miancari</strong> Por <a href="https://github.com/miancari">Miguel Castro</a>.
+            </p>
+          </div>
+    </footer>
+
+  
+
+    <script src="app.js"></script>
+</body>
+
+</html>
